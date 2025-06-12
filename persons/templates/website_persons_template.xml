@@ -1,0 +1,21 @@
+<odoo>
+  <template id="persons_template" name="Persons Website Page">
+    <t t-call="website.layout">
+      <div class="container mt-4">
+        <h1>Persons</h1>
+        <div class="row">
+          <t t-foreach="persons" t-as="person">
+            <div class="col-4">
+              <div class="card mb-3 p-3">
+                <h3><t t-esc="person.full_name"/></h3>
+                <p>Sex: <t t-esc="person.sex or '—'"/></p>
+                <p>Age: <t t-esc="person.age"/></p>
+                <p>Company: <t t-esc="person.company_id.name"/></p>
+              </div>
+            </div>
+          </t>
+        </div>
+      </div>
+    </t>
+  </template>
+</odoo>
