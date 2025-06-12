@@ -1,4 +1,4 @@
-manifest = {
+{
     "name": "Persons",
     "version": "1.0",
     "category": "Human Resources",
@@ -6,7 +6,7 @@ manifest = {
     "depends": ["base", "website"],
     "data": [
         "views/person_views.xml",
-        "templates/persons_template.xml",
+        "templates/website_persons_template.xml",
     ],
     "installable": True,
     "application": True,
