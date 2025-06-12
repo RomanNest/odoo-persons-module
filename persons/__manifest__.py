@@ -6,8 +6,12 @@
     "depends": ["base", "website"],
     "data": [
         "views/person_views.xml",
-        "templates/website_persons_template.xml",
     ],
+    "assets": {
+    "web.assets_frontend": [
+        "persons/templates/*.xml",
+    ],
+},
     "installable": True,
     "application": True,
 }
