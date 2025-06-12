@@ -9,7 +9,7 @@
     ],
     "assets": {
     "web.assets_frontend": [
-        "persons/templates/*.xml",
+        "persons/templates/*.xml"
     ],
 },
     "installable": True,
