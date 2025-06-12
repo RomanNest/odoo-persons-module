@@ -73,5 +73,4 @@ persons/
 4. Open the backend and check: **Website > Persons**
 
 5. Visit the website page: [http://localhost:8069/persons](http://localhost:8069/persons)
-
 ---
