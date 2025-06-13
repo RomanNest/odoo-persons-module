@@ -4,6 +4,7 @@
       <div class="container">
         <h2>Add New Person</h2>
         <form action="/persons/new" method="post" class="form">
+          <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
           <div class="form-group">
             <label>First Name</label>
             <input type="text" name="first_name" required="required" class="form-control"/>
