@@ -12,7 +12,7 @@ class WebsitePerson(http.Controller):
     )
     def persons_list(self, **kwargs):
         persons = (
-            request.env["persons.person"].sudo().search([], order="id desc", limit=5)
+            request.env["persons.person"].search([], order="id desc", limit=5)
         )
         return request.render("persons.persons_template", {"persons": persons})
 
@@ -25,7 +25,7 @@ class WebsitePerson(http.Controller):
     )
     def create_person(self, **post):
         if post:
-            request.env["persons.person"].sudo().create(
+            request.env["persons.person"].create(
                 {
                     "first_name": post.get("first_name"),
                     "last_name": post.get("last_name"),
