@@ -39,6 +39,6 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_persons_root" name="Persons" parent="website.menu_website_configuration" sequence="10"/>
+    <menuitem id="menu_persons_root" name="Persons" sequence="10"/>
     <menuitem id="menu_persons" name="All Persons" parent="menu_persons_root" action="action_persons"/>
 </odoo>
